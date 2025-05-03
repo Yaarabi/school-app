@@ -1,0 +1,15 @@
+
+.dash{
+    width: 50vw;
+    height: 60%;
+    flex-wrap: wrap;
+    div{
+        height: 17vh;
+        width: 22vw;
+        cursor: pointer;
+    }
+}
+footer{
+    background-color: green;
+    height: 10vh;
+}
