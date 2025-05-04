@@ -12,6 +12,7 @@ const Form = () => {
     let {student, setLogin, teacher} = useContext(ForLogin);
     let [name, setName]=useState('')
     let [pass, setPass]=useState('')
+    // let [studData, setStudData]= useState([])
     const navegate = useNavigate()
 
     let hiden = ()=> setLogin(false)
@@ -30,7 +31,7 @@ const Form = () => {
 
     let loginToStud = () =>{
         (user.find((ele)=>(ele.email==name)) && user.find((ele)=>(ele.username==pass)))
-        ? (navegate("/stud")) 
+        ? (navegate("/stud", {state:{name}})) 
         : (alert("your input incorrect"))
     }
 
