@@ -7,6 +7,11 @@
         height: 17vh;
         width: 22vw;
         cursor: pointer;
+        transition: transform 1s, background-color 1s;
+    }
+    div:hover {
+        transform: scale(1.07);
+        background-color: rgb(146, 146, 146);
     }
 }
 footer{

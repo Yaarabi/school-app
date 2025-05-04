@@ -20,7 +20,14 @@ nav{
             border-radius: 5px;
             border: none;
             margin-left: 4px;
-        }
+            transition: transform 1s, background-color 1s;
+            cursor: pointer;
+    }
+    button:hover {
+        transform: scale(1.07);
+        background-color: rgb(0, 85, 0);
+        color: white;
+    }
     }
 }
 main{
@@ -46,6 +53,12 @@ main{
             display: flex;
             align-items: center;
             justify-content: center;
-        }
+            transition: transform 1s, background-color 1s;
+            cursor: pointer;
+    }
+    div:hover {
+        transform: scale(1.07);
+        background-color: rgb(146, 146, 146);
+    }
     }
 }
